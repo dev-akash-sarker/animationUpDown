@@ -106,6 +106,7 @@ nav ul li a {
   margin: 0 auto;
   margin-top: 200px;
   margin-bottom: 200px;
+  border-bottom-right-radius: 40px;
 }
 
 .-ml-3\.5 {
@@ -128,6 +129,11 @@ nav ul li a {
 
 .newClassTwo {
   animation-name: newtwo;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.newClassTwoMax {
+  animation-name: newtwoMax;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }
@@ -166,19 +172,22 @@ nav ul li a {
   40% {
     transform: translate(70px, 400px) scale(1);
   }
-  50% {
+  100% {
     transform: translate(70px, 500px) scale(1);
   }
-  70% {
-    transform: translate(70px, 700px) scale(1);
+}
+
+@keyframes newtwoMax {
+  0% {
+    transform: translate(100px, 550px) scale(1);
   }
-  80% {
-    transform: translate(70px, 800px) scale(1.02);
+  30% {
+    transform: translate(100px, 650px) scale(1);
   }
-  90% {
-    transform: translate(70px, 1000px) scale(1.02);
+  50% {
+    transform: translate(100px, 700px) scale(1);
   }
   100% {
-    transform: translate(100px, 1000px) scale(2);
+    transform: translate(100px, 960px) scale(2);
   }
 }
