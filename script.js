@@ -6,11 +6,6 @@ $(window).scroll(function () {
     $("#face-placeholder").removeClass("newClass");
     $("#face-placeholder-two").removeClass("newClassTwo");
   }
-  if ($(this).scrollTop() > 250) {
-    $(".newClassTwo").addClass("newClassTwoMax");
-  } else {
-    $(".newClassTwo").removeClass("newClassTwoMax");
-  }
 });
 // $(window).scroll(function () {
 //   if ($(this).scrollTop() > 10) {
