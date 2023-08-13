@@ -14,3 +14,19 @@ $(window).scroll(function () {
 //     $("#face-placeholder").removeClass("newClass");
 //   }
 // });
+
+// const handleScroll = () => {
+//   const thresold = 230;
+//   const scrollPosition = window.scrollY;
+//   const elementOne = document.getElementById("face-placeholder");
+//   const elementTwo = document.getElementById("face-placeholder-two");
+//   if (scrollPosition > thresold) {
+//     elementOne.classList.add("newClass");
+//     elementTwo.classList.add("newClassTwo");
+//   } else {
+//     elementOne.classList.remove("newClass");
+//     elementTwo.classList.remove("newClassTwo");
+//   }
+// };
+
+// window.addEventListener("scroll", handleScroll);
